@@ -1,6 +1,20 @@
 # 🏢 Real Estate Investment Advisor: Predicting Property Profitability & Future Value
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://real-estate-investment--advisor.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![XGBoost](https://img.shields.io/badge/ML-XGBoost%20%7C%20Scikit--Learn-orange.svg)](https://xgboost.readthedocs.io/)
+[![Status](https://img.shields.io/badge/Deployment-Live%20on%20Streamlit%20Cloud-success.svg)](https://real-estate-investment--advisor.streamlit.app/)
+
 An institutional, enterprise-grade machine learning platform and interactive **Streamlit Intelligence Dashboard** designed to guide real estate investment decisions across **250,000 pan-India property transactions**.
+
+---
+
+## 🌐 Live Interactive Dashboard
+
+> ### 🚀 **Access the Live Web Application:**  
+> **👉 [https://real-estate-investment--advisor.streamlit.app/](https://real-estate-investment--advisor.streamlit.app/)**
+>
+> *No local setup required! Explore the real-time property valuation simulator, 20-question EDA hub, model performance comparisons, and 5-year investment forecaster directly in your browser.*
 
 ---
 
@@ -167,3 +181,5 @@ python src/train_models.py
 streamlit run app.py
 ```
 Open **`http://localhost:8501`** in your browser.
+
+> 💡 *Prefer zero setup? Access the deployed cloud application at: **[https://real-estate-investment--advisor.streamlit.app/](https://real-estate-investment--advisor.streamlit.app/)***
