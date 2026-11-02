@@ -1,0 +1,81 @@
+{
+  "classification": {
+    "best_model": "XGBoost",
+    "models": {
+      "Logistic Regression": {
+        "accuracy": 0.8532,
+        "precision": 0.8627,
+        "recall": 0.84,
+        "f1_score": 0.8512,
+        "roc_auc": 0.9384,
+        "confusion_matrix": [
+          [
+            5198,
+            802
+          ],
+          [
+            960,
+            5040
+          ]
+        ]
+      },
+      "Random Forest": {
+        "accuracy": 0.9533,
+        "precision": 0.9587,
+        "recall": 0.9473,
+        "f1_score": 0.953,
+        "roc_auc": 0.9928,
+        "confusion_matrix": [
+          [
+            5755,
+            245
+          ],
+          [
+            316,
+            5684
+          ]
+        ]
+      },
+      "XGBoost": {
+        "accuracy": 0.9821,
+        "precision": 0.9849,
+        "recall": 0.9792,
+        "f1_score": 0.982,
+        "roc_auc": 0.9988,
+        "confusion_matrix": [
+          [
+            5910,
+            90
+          ],
+          [
+            125,
+            5875
+          ]
+        ]
+      }
+    }
+  },
+  "regression": {
+    "best_model": "XGBoost Regressor",
+    "models": {
+      "Ridge Regression": {
+        "rmse": 15.78,
+        "mae": 11.97,
+        "r2_score": 0.995,
+        "mape": 6.43
+      },
+      "Random Forest Regressor": {
+        "rmse": 9.14,
+        "mae": 6.58,
+        "r2_score": 0.9983,
+        "mape": 1.73
+      },
+      "XGBoost Regressor": {
+        "rmse": 3.15,
+        "mae": 2.28,
+        "r2_score": 0.9998,
+        "mape": 0.75
+      }
+    }
+  }
+}
