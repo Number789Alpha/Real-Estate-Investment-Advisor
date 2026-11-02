@@ -327,16 +327,38 @@ if "1. Executive Summary" in selected_page:
         
         st.subheader("🏗️ System Architecture & Data Flow")
         st.markdown("""
-        ```mermaid
-        graph TD
-            A[Raw Dataset: 250k Transactions] --> B[Data Preprocessing & Anomaly Cleansing]
-            B --> C[Feature Engineering: Infra, Amenities & Ratios]
-            C --> D[Scaling & Binary/Categorical Encoding]
-            D --> E1[Classification: Good Investment (XGBoost)]
-            D --> E2[Regression: 5-Year Valuation (XGBoost)]
-            E1 --> F[Interactive Decision Advisor & Streamlit UI]
-            E2 --> F
-        ```
+        <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 16px; margin-top: 8px;">
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <div style="background: white; border: 1px solid #CBD5E1; border-left: 4px solid #1E3A8A; padding: 9px 13px; border-radius: 6px; font-size: 0.88rem; font-weight: 600; color: #0F172A;">
+                    1️⃣ Raw Data Ingestion (250,000 Pan-India Records)
+                </div>
+                <div style="text-align: center; color: #64748B; font-size: 0.95rem; line-height: 0.9;">⬇️</div>
+                <div style="background: white; border: 1px solid #CBD5E1; border-left: 4px solid #0D9488; padding: 9px 13px; border-radius: 6px; font-size: 0.88rem; font-weight: 600; color: #0F172A;">
+                    2️⃣ Data Cleansing, Imputation & Anomaly Handling
+                </div>
+                <div style="text-align: center; color: #64748B; font-size: 0.95rem; line-height: 0.9;">⬇️</div>
+                <div style="background: white; border: 1px solid #CBD5E1; border-left: 4px solid #3B82F6; padding: 9px 13px; border-radius: 6px; font-size: 0.88rem; font-weight: 600; color: #0F172A;">
+                    3️⃣ Feature Engineering (Infrastructure, Amenities & Valuation Ratios)
+                </div>
+                <div style="text-align: center; color: #64748B; font-size: 0.95rem; line-height: 0.9;">⬇️</div>
+                <div style="background: white; border: 1px solid #CBD5E1; border-left: 4px solid #8B5CF6; padding: 9px 13px; border-radius: 6px; font-size: 0.88rem; font-weight: 600; color: #0F172A;">
+                    4️⃣ Binary Encodings & Multi-Scaler Normalization (Standard / MinMax / Robust)
+                </div>
+                <div style="text-align: center; color: #64748B; font-size: 0.95rem; line-height: 0.9;">⬇️</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                    <div style="background: #F0FDF4; border: 1px solid #BBF7D0; border-left: 4px solid #10B981; padding: 9px 11px; border-radius: 6px; font-size: 0.83rem; font-weight: 600; color: #166534;">
+                        🎯 Classification Model<br><span style="font-weight: 400; font-size: 0.78rem; color: #15803D;">Good Investment (XGBoost 98.2%)</span>
+                    </div>
+                    <div style="background: #EFF6FF; border: 1px solid #BFDBFE; border-left: 4px solid #2563EB; padding: 9px 11px; border-radius: 6px; font-size: 0.83rem; font-weight: 600; color: #1E40AF;">
+                        📈 Regression Model<br><span style="font-weight: 400; font-size: 0.78rem; color: #1D4ED8;">5Y Valuation (XGBoost R² 0.9998)</span>
+                    </div>
+                </div>
+                <div style="text-align: center; color: #64748B; font-size: 0.95rem; line-height: 0.9;">⬇️</div>
+                <div style="background: #FEF3C7; border: 1px solid #FDE68A; border-left: 4px solid #F59E0B; padding: 9px 13px; border-radius: 6px; font-size: 0.88rem; font-weight: 600; color: #92400E;">
+                    5️⃣ Interactive Real-Time Decision Advisor & Streamlit UI
+                </div>
+            </div>
+        </div>
         """, unsafe_allow_html=True)
         
     with col2:
